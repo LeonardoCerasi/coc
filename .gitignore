@@ -1,0 +1,7 @@
+# object files
+build/*
+*.o
+
+# executable files
+coc
+exec
