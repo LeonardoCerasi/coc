@@ -25,5 +25,7 @@ public:
 	void set_points(int);
 
 	void print();
-	std::vector<Player> player_list(const std::string, int);
 };
+
+std::vector<Player> player_list(const std::string, int);
+std::vector<std::string> bonus_list(const std::string);
