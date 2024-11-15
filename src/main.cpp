@@ -5,7 +5,6 @@
 
 #include "player.h"
 #include "points.h"
-#include "random_gen.h"
 
 #define N_TOP 10
 
@@ -79,6 +78,13 @@ int main()
 	}
 
 	// distribute bonuses
+	std::vector<Player> player_bonus{bonus(players, 6)};
+	
+	// log players with bonuses
+	std::cout << "============================================================" << std::endl;
+
+	std::cout << "\nBonuses of this month:\n" << std::endl;
+	for (Player p : player_bonus) { std::cout << p.get_name() << std::endl; }
 
 	return EXIT_SUCCESS;
 }
