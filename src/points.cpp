@@ -24,7 +24,7 @@ void compare(Player &player, std::vector<std::string> past_bonus)
 {
 	for (std::string name : past_bonus)
 	{
-		if (player.get_name() == name) { player.set_points(player.get_points() / 2); }
+//		if (player.get_name() == name) { player.set_points(player.get_points() / 2); }
 	}
 }
 

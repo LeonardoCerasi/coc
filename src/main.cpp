@@ -78,7 +78,7 @@ int main()
 	}
 
 	// distribute bonuses
-	std::vector<Player> player_bonus{bonus(players, 6)};
+	std::vector<Player> player_bonus{bonus(players, 8)};
 	
 	// log players with bonuses
 	std::cout << "============================================================" << std::endl;
