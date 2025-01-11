@@ -13,11 +13,13 @@ int main()
 	// retrieve data
 
 	// select date
-	int year{}, month{};
+	int year{}, month{}, n_bonus{};
 	std::cout << "Year (0-99): 20";
 	std::cin >> year;
 	std::cout << "\nMonth (1-12): ";
 	std::cin >> month;
+	std::cout << "\nNumber of bonuses: ";
+	std::cin >> n_bonus;
 	std::cout << std::endl;
 
 	// present league
@@ -78,7 +80,7 @@ int main()
 	}
 
 	// distribute bonuses
-	std::vector<Player> player_bonus{bonus(players, 8)};
+	std::vector<Player> player_bonus{bonus(players, n_bonus)};
 	
 	// log players with bonuses
 	std::cout << "============================================================" << std::endl;
