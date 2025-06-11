@@ -57,7 +57,7 @@ int main()
 	
 	base_points(players);
 	star_points(players);
-	// bonus_points(players, past_bonus_1, past_bonus_2);
+	bonus_points(players, past_bonus_1, past_bonus_2);
 
 	// log out
 
