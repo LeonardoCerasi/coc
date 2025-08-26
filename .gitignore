@@ -8,3 +8,8 @@ exec
 
 # compiler files
 .ccls-cache
+
+
+# Added by cargo
+
+/target
