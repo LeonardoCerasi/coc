@@ -5,3 +5,6 @@ build/*
 # executable files
 coc
 exec
+
+# compiler files
+.ccls-cache
