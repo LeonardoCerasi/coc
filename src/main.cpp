@@ -1,5 +1,6 @@
 #include <cstdlib>
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -83,10 +84,18 @@ int main()
 	std::vector<Player> player_bonus{bonus(players, n_bonus)};
 	
 	// log players with bonuses
+
 	std::cout << "============================================================" << std::endl;
 
+	// log file
+	std::ofstream output("leagues/" + std::to_string(year) + "-" + std::to_string(month) + "/bonus.out");
+
 	std::cout << "\nBonuses of this month:\n" << std::endl;
-	for (Player p : player_bonus) { std::cout << p.get_name() << std::endl; }
+	for (Player p : player_bonus)
+	{
+		std::cout << p.get_name() << std::endl;
+		output << p.get_name() << std::endl;
+	}
 
 	return EXIT_SUCCESS;
 }
